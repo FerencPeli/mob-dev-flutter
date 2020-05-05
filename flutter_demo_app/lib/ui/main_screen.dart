@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'flags/flags_screen.dart';
+import 'countries/countries_screen.dart';
 import 'form/form_screen.dart';
 import 'location/location_screen.dart';
 
@@ -32,7 +32,7 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       body: PageView(
         children: [
-          Container(child: FlagsScreen()),
+          Container(child: CountriesScreen()),
           Container(child: FormScreen()),
           Container(child: LocationScreen())
         ],
@@ -43,7 +43,7 @@ class _MainScreenState extends State<MainScreen> {
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.flag),
-            title: Text("Flags"),
+            title: Text("Countries"),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.playlist_add_check),
